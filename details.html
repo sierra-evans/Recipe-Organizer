@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Recipe Chest</title>
+    <!-- Title will be replaced with actual recipe title -->
+    <title>Old Fashioned Pancakes | The Recipe Chest</title>
     <!-- Be sure to add link to css file -->
     <link rel="stylesheet" href="">
 </head>
@@ -19,20 +20,24 @@
     <!-- MAIN -->
     <main>
         <h1>The Recipe Chest</h1>
-        <section id="about-us">
-            <h2>About Us</h2>
-            <!-- Maybe have a quick about us and a brief desciption of why we chose this project -->
-            <p></p>
-        </section>
-        <section id="featured-recipe">
-            <h2>Recipe of the Day</h2>
+        <section id="full-recipe">
             <!-- Hard-coded in for now, but will be replaced with one fetched from API later -->
-             <a href="details.html" id="recipe-card">
                 <img id="recipe-image" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F02%2F17%2F21014-Good-old-Fashioned-Pancakes-mfs_002.jpg&q=60&c=sc&poi=auto&orient=true&h=512" alt="Image of pancakes">
                 <h3 id="recipe-title">Old Fashioned Pancakes</h3>
                 <h4 id="recipe-category">Breakfast</h4>
                 <p id="recipe-decription">Quick and easy delicious, fluffy pancakes.</p>
-             </a>
+                <ul id="recipe-ingredients">
+                    <li>Flour</li>
+                    <li>Sugar</li>
+                    <li>Water</li>
+                    <li>Salt</li>
+                    <li>Milk</li>
+                    <li>Egg</li>
+                </ul>
+                <ol id="recipe-instructions">
+                    <li>Mix together all ingredients into a batter.</li>
+                    <li>Pour 1/4 cup batter onto skillet over medium-high heat. Flip after two minutes, cook for two more minutes.</li>
+                </ol>
         </section>
     </main>
     <!-- FOOTER -->

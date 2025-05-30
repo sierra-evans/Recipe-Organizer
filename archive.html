@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | The Recipe Chest</title>
+    <!-- Be sure to add link to css file -->
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="archive.html">Browse Recipes</a>
+            <a href="add-recipe.html">Add a Recipe</a>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <h1>The Recipe Chest</h1>
+        <form id="search-form">
+            <!-- Text input for keywords -->
+            <input type="text" id="search-input" placeholder="Search recipes..." />
+            <!-- Dropdown for category selection -->
+            <select id="category-selection">
+              <option value="">All Categories</option>
+              <option value="main">Breakfast</option>
+              <option value="dessert">Lunch</option>
+              <option value="snack">Dinner</option>
+              <option value="drink">Snack</option>
+              <option value="snack">Dessert</option>
+            </select>
+            <button type="submit">Search</button>
+          </form>
+          <!-- Results will be shown here -->
+          <div id="search-results"></div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 The Recipe Chest</p>
+    </footer>
+</body>
+</html>

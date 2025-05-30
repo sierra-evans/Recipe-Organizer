@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add A Recipe | The Recipe Chest</title>
+    <!-- Be sure to add link to css file -->
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="archive.html">Browse Recipes</a>
+            <a href="add-recipe.html">Add a Recipe</a>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <h1>The Recipe Chest</h1>
+        <h2>Add Recipe</h2>
+        <form id="recipe-form">
+            <!-- Title -->
+            <label for="title">Recipe Title:</label>
+            <input type="text" id="title" required />
+            <!-- Image -->
+            <label for="image">Image URL:</label>
+            <input type="url" id="image" />
+            <!-- Category -->
+            <label for="category">Category:</label>
+            <select id="category" required>
+              <option value="">Choose one</option>
+              <option value="main">Breakfast</option>
+              <option value="dessert">Lunch</option>
+              <option value="snack">Dinner</option>
+              <option value="snack">Snack</option>
+              <option value="snack">Dessert</option>
+            </select>
+            <!-- Ingredients -->
+            <label for="ingredients">Ingredients (comma-separated):</label>
+            <textarea id="ingredients" required></textarea>
+            <!-- Instructions -->
+            <label for="instructions">Instructions (separated by "|"):</label>
+            <textarea id="instructions" required></textarea>
+            <!-- Submit button -->
+            <button type="submit">Save Recipe</button>
+          </form>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 The Recipe Chest</p>
+    </footer>
+</body>
+</html>
