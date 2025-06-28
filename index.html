@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Recipe Chest</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="random-recipe.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -15,7 +16,6 @@
             <a href="add-recipe.html">Add a Recipe</a>
         </nav>
     </header>
-
     <!-- MAIN -->
     <main>
         <h1>The Recipe Chest</h1>
@@ -28,31 +28,20 @@
         <section id="featured-recipe">
             <h2>Recipe of the Day</h2>
             <a href="details.html" id="recipe-card">
-                <img id="recipe-image" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F02%2F17%2F21014-Good-old-Fashioned-Pancakes-mfs_002.jpg&q=60&c=sc&poi=auto&orient=true&h=512" alt="Image of pancakes">
-                <h3 id="recipe-title">Old Fashioned Pancakes</h3>
-                <h4 id="recipe-category">Breakfast</h4>
-                <p id="recipe-decription">Quick and easy delicious, fluffy pancakes.</p>
+                <img
+                  id="recipe-image"
+                  src=""
+                  alt=""
+                />
+                <h3 id="recipe-title"></h3>
+                <h4 id="recipe-category"></h4>
+                <p id="recipe-instructions"></p>
             </a>
         </section>
     </main>
-
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 The Recipe Chest</p>
     </footer>
-
-    <script>
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const recipe = data[0];
-
-            if (recipe.image) document.getElementById('recipe-image').src = recipe.image;
-            if (recipe.title) document.getElementById('recipe-title').textContent = recipe.title;
-            if (recipe.category) document.getElementById('recipe-category').textContent = recipe.category;
-            if (recipe.description) document.getElementById('recipe-decription').textContent = recipe.description;
-        })
-        .catch(error => console.error('Error loading recipe:', error));
-    </script>
 </body>
 </html>

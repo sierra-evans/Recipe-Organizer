@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add A Recipe | The Recipe Chest</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
+    <script type="module" defer src="add-recipe.js"></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -30,12 +30,7 @@
             <!-- Category -->
             <label for="category">Category:</label>
             <select id="category" required>
-              <option value="">Choose one</option>
-              <option value="main">Breakfast</option>
-              <option value="dessert">Lunch</option>
-              <option value="snack">Dinner</option>
-              <option value="snack">Snack</option>
-              <option value="snack">Dessert</option>
+                <option value="">Choose one</option>
             </select>
             <!-- Ingredients -->
             <label for="ingredients">Ingredients (comma-separated):</label>
