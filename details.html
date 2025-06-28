@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+And this one needs css as well:
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title will be replaced with actual recipe title -->
-    <title>Old Fashioned Pancakes | The Recipe Chest</title>
+    <title>Add A Recipe | The Recipe Chest</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="">
 </head>
 <body>
@@ -20,29 +26,37 @@
     <!-- MAIN -->
     <main>
         <h1>The Recipe Chest</h1>
-        <section id="full-recipe">
-            <!-- Hard-coded in for now, but will be replaced with one fetched from API later -->
-                <img id="recipe-image" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F02%2F17%2F21014-Good-old-Fashioned-Pancakes-mfs_002.jpg&q=60&c=sc&poi=auto&orient=true&h=512" alt="Image of pancakes">
-                <h3 id="recipe-title">Old Fashioned Pancakes</h3>
-                <h4 id="recipe-category">Breakfast</h4>
-                <p id="recipe-decription">Quick and easy delicious, fluffy pancakes.</p>
-                <ul id="recipe-ingredients">
-                    <li>Flour</li>
-                    <li>Sugar</li>
-                    <li>Water</li>
-                    <li>Salt</li>
-                    <li>Milk</li>
-                    <li>Egg</li>
-                </ul>
-                <ol id="recipe-instructions">
-                    <li>Mix together all ingredients into a batter.</li>
-                    <li>Pour 1/4 cup batter onto skillet over medium-high heat. Flip after two minutes, cook for two more minutes.</li>
-                </ol>
-        </section>
+        <h2>Add Recipe</h2>
+        <form id="recipe-form">
+            <!-- Title -->
+            <label for="title">Recipe Title:</label>
+            <input type="text" id="title" required />
+            <!-- Image -->
+            <label for="image">Image URL:</label>
+            <input type="url" id="image" />
+            <!-- Category -->
+            <label for="category">Category:</label>
+            <select id="category" required>
+              <option value="">Choose one</option>
+              <option value="main">Breakfast</option>
+              <option value="dessert">Lunch</option>
+              <option value="snack">Dinner</option>
+              <option value="snack">Snack</option>
+              <option value="snack">Dessert</option>
+            </select>
+            <!-- Ingredients -->
+            <label for="ingredients">Ingredients (comma-separated):</label>
+            <textarea id="ingredients" required></textarea>
+            <!-- Instructions -->
+            <label for="instructions">Instructions (separated by "|"):</label>
+            <textarea id="instructions" required></textarea>
+            <!-- Submit button -->
+            <button type="submit">Save Recipe</button>
+          </form>
     </main>
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 The Recipe Chest</p>
     </footer>
 </body>
-</html>
+</html><head>
