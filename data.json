@@ -1,0 +1,15 @@
+[
+    {
+      "title": "Old Fashioned Pancakes",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F02%2F17%2F21014-Good-old-Fashioned-Pancakes-mfs_002.jpg&q=60&c=sc&poi=auto&orient=true&h=512",
+      "category": "Breakfast",
+      "description": "Quick and easy delicious, fluffy pancakes.",
+      "ingredients": ["Flour", "Sugar", "Water", "Salt", "Milk", "Egg"],
+      "instructions": [
+        "Mix together all ingredients into a batter.",
+        "Pour 1/4 cup batter onto skillet over medium-high heat.",
+        "Flip after two minutes, cook for two more minutes."
+      ]
+    }
+  ]
+  
