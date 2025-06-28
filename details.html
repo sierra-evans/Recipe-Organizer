@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-And this one needs css as well:
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add A Recipe | The Recipe Chest</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipe Details | The Recipe Chest</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="details.js"></script>
 </head>
+
 <body>
-    <!-- HEADER -->
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -23,40 +17,22 @@ And this one needs css as well:
             <a href="add-recipe.html">Add a Recipe</a>
         </nav>
     </header>
-    <!-- MAIN -->
+
     <main>
-        <h1>The Recipe Chest</h1>
-        <h2>Add Recipe</h2>
-        <form id="recipe-form">
-            <!-- Title -->
-            <label for="title">Recipe Title:</label>
-            <input type="text" id="title" required />
-            <!-- Image -->
-            <label for="image">Image URL:</label>
-            <input type="url" id="image" />
-            <!-- Category -->
-            <label for="category">Category:</label>
-            <select id="category" required>
-              <option value="">Choose one</option>
-              <option value="main">Breakfast</option>
-              <option value="dessert">Lunch</option>
-              <option value="snack">Dinner</option>
-              <option value="snack">Snack</option>
-              <option value="snack">Dessert</option>
-            </select>
-            <!-- Ingredients -->
-            <label for="ingredients">Ingredients (comma-separated):</label>
-            <textarea id="ingredients" required></textarea>
-            <!-- Instructions -->
-            <label for="instructions">Instructions (separated by "|"):</label>
-            <textarea id="instructions" required></textarea>
-            <!-- Submit button -->
-            <button type="submit">Save Recipe</button>
-          </form>
+        <h1 id="recipe-title"></h1>
+        <img id="recipe-image" alt="Recipe Image" />
+        <h3 id="recipe-category"></h3>
+        <p id="recipe-description"></p>
+
+        <h4>Ingredients</h4>
+        <ul id="recipe-ingredients"></ul>
+
+        <h4>Instructions</h4>
+        <ol id="recipe-instructions"></ol>
     </main>
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 The Recipe Chest</p>
-    </footer>
+
+    <footer>&copy; 2025 The Recipe Chest</footer>
+
 </body>
-</html><head>
+
+</html>
